@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page{
+  background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)) ,url(../images/home.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.AppBar{
+  width: 100%;
+  height: 80px;
+  display: block;
+}
+.logo{
+  width: 250px;
+  height:80px;
+  float: left;
+  color: white;
+  margin: 20px;
+  border: 4px solid black;
+  text-align: center;
+}
+.logo h2{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-family: 'Lobster Two', cursive;
+  padding-top: 10px;
+
+}
+.logo h6{
+  text-align: center;
+  margin-top: -15px;
+}
+.menu{
+  float: right;
+  width: 800px;
+  height: 80px;
+  float: right;
+  text-align: right;
+}
+.menu ul li{
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 60px;
+  position: relative;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+.menu ul li a::after{
+  content: '';
+  height: 3px;
+  width:0;
+  background: #F0A500;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.menu ul li a:hover::after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+.content h1{
+  font-size: 70px;
+  margin-top: 60px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border:2px solid #F0A500;
+  background: transparent ;
+  color:white;
+  cursor: pointer;
+  position: relative;
+}
+span{
+  background: #F0A500;
+  height:100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%
+}
+button:hover{
+  border: none;
+}
